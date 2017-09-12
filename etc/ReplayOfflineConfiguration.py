@@ -368,6 +368,16 @@ datasets += [ "ZeroBiasPixelHVScan0", "ZeroBiasPixelHVScan1", "ZeroBiasPixelHVSc
              "ZeroBiasPixelHVScan3", "ZeroBiasPixelHVScan4", "ZeroBiasPixelHVScan5", 
              "ZeroBiasPixelHVScan6", "ZeroBiasPixelHVScan7" ]
 
+datasets += [ "ZeroBias8b4e1", "ZeroBias8b4e2", "ZeroBias8b4e3",
+             "ZeroBias8b4e4", "ZeroBias8b4e5", "ZeroBias8b4e6",
+             "ZeroBias8b4e7", "ZeroBias8b4e8", "ZeroBias8b4e10",
+             "ZeroBias8b4e9" ]
+
+dataseta += [ "ZeroBiasNominalTrains1", "ZeroBiasNominalTrains2", "ZeroBiasNominalTrains3",
+             "ZeroBiasNominalTrains4", "ZeroBiasNominalTrains5", "ZeroBiasNominalTrains6",
+             "ZeroBiasNominalTrains7", "ZeroBiasNominalTrains8", "ZeroBiasNominalTrains10",
+             "ZeroBiasNominalTrains9" ]
+
 for dataset in datasets:
     addDataset(tier0Config, dataset,
                do_reco = True,
@@ -395,8 +405,9 @@ for dataset in datasets:
 
 datasets = [ "HLTPhysics", 
              "HLTPhysics0", "HLTPhysics1", "HLTPhysics2",
-             "HLTPhysics3", "HLTPhysics4", "HLTPhysics5", 
-             "HLTPhysics6", "HLTPhysics7", "HLTPhysics8", ]
+             "HLTPhysics3", "HLTPhysics4", "HLTPhysics5",
+             "HLTPhysics6", "HLTPhysics7", "HLTPhysics8",
+             "HLTPhysics9", "HLTPhysics10" ]
 
 for dataset in datasets:
     addDataset(tier0Config, dataset,
